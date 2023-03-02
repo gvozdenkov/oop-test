@@ -1,0 +1,11 @@
+.list-type-btn {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-width: initial;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+
+  background-color: rgb(30, 30, 30);
+  cursor: pointer;
+}

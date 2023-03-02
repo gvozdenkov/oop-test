@@ -1,0 +1,21 @@
+.button {
+  background-color: rgb(30, 30, 30);
+  border: 0;
+  color: white;
+  padding: 10px 20px;
+  min-width: 70px;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  transition: background-color 0.3s ease-out, scale 0.15s ease-out;
+}
+
+.button:hover,
+.button:focus {
+  background-color: rgb(55, 55, 55);
+  outline: 0;
+}
+
+.button:active {
+  scale: 0.95;
+}

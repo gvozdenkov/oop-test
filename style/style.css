@@ -1,0 +1,21 @@
+@import url(../style/normalize.css);
+
+@import url(../style/blocks/page/page.css);
+@import url(../style/blocks/container/container.css);
+
+@import url(../style/blocks/list/list.css);
+
+@import url(../style/blocks/button/button.css);
+
+@import url(../style/blocks/controls-list/controls-list.css);
+
+@import url(../style/blocks/list-type-btn/list-type-btn.css);
+@import url(../style/blocks/list-type-btn/_type/list-type-btn_type_list.css);
+@import url(../style/blocks/list-type-btn/_type/list-type-btn_type_grid.css);
+
+@import url(../style/blocks/products-list/products-list.css);
+
+@import url(../style/blocks/card/card.css);
+@import url(../style/blocks/card/__footer/card__footer.css);
+@import url(../style/blocks/card/__image/card__image.css);
+@import url(../style/blocks/card/__description/card__description.css);

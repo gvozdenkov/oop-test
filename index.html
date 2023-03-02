@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>OOP test</title>
+  </head>
+  <body class="page">
+    <div class="container">
+      <section class="controls">
+        <ul class="list controls-list">
+          <li>
+            <button
+              class="button list-type-btn list-type-btn_type_list"
+              type="button"
+              aria-label="list view"
+            ></button>
+          </li>
+          <li>
+            <button
+              class="button list-type-btn list-type_type_grid"
+              type="button"
+              aria-label="grid view"
+            ></button>
+          </li>
+        </ul>
+      </section>
+      <section class="products">
+        <h1 class="title">Товары</h1>
+        <ul class="list products-list">
+          <!-- Cards render here -->
+        </ul>
+      </section>
+    </div>
+
+    <!-- Card Template -->
+    <template id="grid-card-template">
+      <li class="products-list__item">
+        <article class="card">
+          <img src="" alt="" class="card__image" />
+          <foooter class="card__footer">
+            <h2 class="card__title"></h2>
+            <p class="card__description"></p>
+            <p class="card__price"></p>
+            <button class="button card__add-btn">Add</button>
+          </foooter>
+        </article>
+      </li>
+    </template>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
