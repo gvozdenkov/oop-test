@@ -1,0 +1,9 @@
+.card__footer_content_horizontal {
+  padding-right: 20px;
+}
+
+@media (max-width: 576px) {
+  .card__footer_content_horizontal {
+    padding-right: 10px;
+  }
+}

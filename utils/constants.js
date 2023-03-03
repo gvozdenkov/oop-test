@@ -4,7 +4,7 @@ export const products = [
       'https://images.unsplash.com/photo-1503602642458-232111445657?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80',
     title: 'Product 01',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. A, tenetur delectus eum facilis rem perferendis nihil ipsa. Unde sint veniam quae vel, ipsa eius culpa laborum expedita aspernatur sapiente non?',
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. A, tenetur delectus eum facilis rem perferendis nihil ipsa. Unde sint veniam quae vel, ipsa eius culpa laborum expedita aspernatur sapiente non? Lorem ipsum dolor sit amet consectetur adipisicing elit. A, tenetur delectus eum facilis rem perferendis nihil ipsa. Unde sint veniam quae vel, ipsa eius culpa laborum expedita aspernatur sapiente non?',
     price: 100,
   },
   {
@@ -50,4 +50,5 @@ export const products = [
 ];
 
 export const gridCardTemplateSelector = '#grid-card-template';
+export const listCardTemplateSelector = '#list-card-template';
 export const cardsContainerSelector = '.products-list';

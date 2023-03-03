@@ -1,0 +1,9 @@
+.card__add-btn_content_horizontal {
+  align-self: end;
+}
+
+@media (max-width: 576px) {
+  .card__add-btn_content_horizontal {
+    align-self: stretch;
+  }
+}

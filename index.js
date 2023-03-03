@@ -1,6 +1,11 @@
 import { Card } from './components/Card.js';
 import { Section } from './components/Section.js';
-import { cardsContainerSelector, gridCardTemplateSelector, products } from './utils/constants.js';
+import {
+  cardsContainerSelector,
+  gridCardTemplateSelector,
+  listCardTemplateSelector,
+  products,
+} from './utils/constants.js';
 
 const cardList = new Section(
   {

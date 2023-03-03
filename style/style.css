@@ -14,8 +14,15 @@
 @import url(../style/blocks/list-type-btn/_type/list-type-btn_type_grid.css);
 
 @import url(../style/blocks/products-list/products-list.css);
+@import url(../style/blocks/products-list/_content/products-list_content_horizontal.css);
+@import url(../style/blocks/products-list/__item/products-list__item.css);
 
 @import url(../style/blocks/card/card.css);
+@import url(../style/blocks/card/_content/card_content_horizontal.css);
 @import url(../style/blocks/card/__footer/card__footer.css);
+@import url(../style/blocks/card/__footer/_content/card__footer_content_horizontal.css);
 @import url(../style/blocks/card/__image/card__image.css);
+@import url(../style/blocks/card/__image/_content/card__image_content_horizontal.css);
 @import url(../style/blocks/card/__description/card__description.css);
+@import url(../style/blocks/card/__add-btn/card__add-btn.css);
+@import url(../style/blocks/card/__add-btn/_content/card__add-btn_content_horizontal.css);

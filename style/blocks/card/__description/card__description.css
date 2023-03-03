@@ -1,3 +1,6 @@
 .card__description {
-    line-height: 1.4;
+  line-height: 1.4;
+  min-width: 0;
+  word-wrap: break-word;
+  flex-grow: 0;
 }

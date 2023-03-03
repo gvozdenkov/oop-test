@@ -1,0 +1,9 @@
+.card__image_content_horizontal {
+  max-width: 30%;
+}
+
+@media (max-width: 576px) {
+  .card__image_content_horizontal {
+    max-width: initial;
+  }
+}
