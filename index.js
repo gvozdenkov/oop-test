@@ -1,27 +1,51 @@
-import { Card } from './components/Card.js';
+import { defaultCard } from './components/defaultCard.js';
+import { horizontalCard } from './components/horizontalCard.js';
 import { Section } from './components/Section.js';
 import {
+  cardsContainerEl,
   cardsContainerSelector,
+  gridButtonEl,
   gridCardTemplateSelector,
+  listButtonEl,
   listCardTemplateSelector,
-  products,
+  productListHorizontalClass,
 } from './utils/constants.js';
+import { products } from './utils/data.js';
 
-const cardList = new Section(
+const defaultCardList = new Section(
   {
+    data: products,
     renderer: (cards) => {
-      cards.reverse().forEach((card) => cardList.addItem(createCardEl(card)));
+      defaultCardList.clear();
+      cardsContainerEl.classList.remove(productListHorizontalClass);
+      cards.forEach((card) => {
+        defaultCardList.addItem(createDefaultCardEl(card));
+      });
     },
   },
   cardsContainerSelector
 );
 
-function createCardEl(cardData) {
-  const card = new Card(gridCardTemplateSelector, cardData, {
-    handleAddToCart: () => {
+const horizontalCardList = new Section(
+  {
+    data: products,
+    renderer: (cards) => {
+      horizontalCardList.clear();
+      cardsContainerEl.classList.add(productListHorizontalClass);
+      cards.forEach((card) => {
+        horizontalCardList.addItem(createHorizontalCardEl(card));
+      });
+    },
+  },
+  cardsContainerSelector
+);
+
+function createDefaultCardEl(cardData) {
+  const card = new defaultCard(gridCardTemplateSelector, cardData, {
+    handleAddToCart: (card) => {
       console.log('add to cart');
     },
-    handleImageClick: () => {
+    handleImageClick: (card) => {
       console.log('image click');
     },
   });
@@ -29,4 +53,20 @@ function createCardEl(cardData) {
   return card.generate();
 }
 
-cardList.addItems(products);
+function createHorizontalCardEl(cardData) {
+  const card = new horizontalCard(listCardTemplateSelector, cardData, {
+    handleAddToCart: (card) => {
+      console.log('add to cart');
+    },
+    handleImageClick: (card) => {
+      console.log('image click');
+    },
+  });
+
+  return card.generate();
+}
+
+gridButtonEl.addEventListener('click', () => defaultCardList.addItems());
+listButtonEl.addEventListener('click', () => horizontalCardList.addItems());
+
+defaultCardList.addItems();
